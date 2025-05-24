@@ -27,11 +27,21 @@ body {
 }
 
 .body {
+    padding: 55px 0 44px 0;
     background-color: #F37843;
-    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 'body__episode1 body__episode2'
+                         'body__episode1 body__episode2'
+                         'body__episode1 body__episode2';
+                         gap: 75px 451px;
     font-family: 'Inter';
     font-weight: bold;
-    color: #46444F;
+    color: black;
+
+    &__episode {
+        cursor: pointer;
+    }
 }
 
 .footer {
@@ -55,7 +65,9 @@ body {
 
     &__contacts {
         min-height: 10rem;
-        
+        display: grid;
+        align-items: end;
+
         a {
             color: black;
         }
