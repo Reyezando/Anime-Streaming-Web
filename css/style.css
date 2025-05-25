@@ -31,8 +31,13 @@ body {
   font-weight: bold;
   color: black;
 }
-.body__episode {
+.body > div {
   cursor: pointer;
+}
+.body img {
+  width: 300px;
+  height: 170px;
+  border-radius: 6px;
 }
 
 .footer {
