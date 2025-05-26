@@ -19,13 +19,23 @@ body {
   color: white;
   font-size: 28px;
   font-family: "JockeyOne";
+  padding-left: 52px;
 }
+.navbar__title a {
+  color: white;
+  text-decoration: none;
+}
+.navbar__logo {
+  padding-right: 30px;
+  cursor: pointer;
+}
+
 .body {
   padding: 55px 0 44px 0;
   background-color: #F37843;
   display: grid;
   justify-content: center;
-  grid-template-areas: "body__episode1 body__episode2" "body__episode1 body__episode2" "body__episode1 body__episode2";
+  grid-template-areas: "body__episode1 body__episode2";
   gap: 75px 451px;
   font-family: "Inter";
   font-weight: bold;
@@ -43,30 +53,37 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 19.2px 16px;
   background-color: #D9D9D9;
   font-family: "Inter";
 }
 .footer__title {
   font-size: 28px;
 }
+.footer__name {
+  padding-top: 11px;
+  margin: 0;
+}
 .footer__text {
   font-size: 20px;
 }
 .footer__createdby {
-  min-height: 10rem;
+  padding-left: 26px;
+  padding-top: 30px;
+  min-height: 13.06rem;
 }
 .footer__contacts {
-  min-height: 10rem;
+  min-height: 13.06rem;
+  padding-right: 23px;
+  padding-bottom: 16px;
   display: grid;
   align-items: end;
 }
 .footer__contacts a {
   color: black;
 }
-.footer__contacts .email {
-  margin-top: 8px;
+.footer__contacts__email {
+  margin-top: 7px;
 }
-.footer__contacts .wa {
-  margin-top: 6.4px;
+.footer__contacts__wa {
+  margin-top: 7px;
 }/*# sourceMappingURL=style.css.map */

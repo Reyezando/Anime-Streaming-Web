@@ -19,10 +19,17 @@ body {
         color: white;
         font-size: 28px;
         font-family: 'JockeyOne';
+        padding-left: 52px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 
     &__logo {
-        
+        padding-right: 30px;
+        cursor: pointer;
     }
 }
 
@@ -32,8 +39,7 @@ body {
     display: grid;
     justify-content: center;
     grid-template-areas: 'body__episode1 body__episode2'
-                         'body__episode1 body__episode2'
-                         'body__episode1 body__episode2';
+                         ;
                          gap: 75px 451px;
     font-family: 'Inter';
     font-weight: bold;
@@ -53,37 +59,39 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 19.2px 16px;
     background-color: #D9D9D9;
     font-family: 'Inter';
 
     &__title {
         font-size: 28px;
     }
-
+    &__name {
+        padding-top: 11px;
+        margin: 0;
+    }
     &__text {
         font-size: 20px;
     }
-    
     &__createdby {
-        min-height: 10rem;
+        padding-left: 26px;
+        padding-top: 30px;
+        min-height: 13.06rem;
     }
-
     &__contacts {
-        min-height: 10rem;
+        min-height: 13.06rem;
+        padding-right: 23px;
+        padding-bottom: 16px;
         display: grid;
         align-items: end;
 
         a {
             color: black;
         }
-
-        .email {
-            margin-top: 8px;
+        &__email {
+            margin-top: 7px;
         }
-        
-        .wa {
-            margin-top: 6.4px;
+        &__wa {
+            margin-top: 7px;
         }
     }
 }
