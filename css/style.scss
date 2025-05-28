@@ -3,6 +3,8 @@
 }
 
 body {
+    font-family: 'Inter';
+    font-size: 28px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -17,8 +19,6 @@ body {
 
     &__title {
         color: white;
-        font-size: 28px;
-        font-family: 'JockeyOne';
         padding-left: 52px;
 
         a {
@@ -34,25 +34,46 @@ body {
 }
 
 .body {
-    padding: 55px 0 44px 0;
     background-color: #F37843;
-    display: grid;
-    justify-content: center;
-    grid-template-areas: 'body__episode1 body__episode2'
-                         ;
-                         gap: 75px 451px;
-    font-family: 'Inter';
-    font-weight: bold;
-    color: black;
 
-    > div {
-        cursor: pointer;
+    &__episode {
+        padding: 55px 0 44px 0;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 'body__episode1 body__episode2';
+                              gap: 75px 451px;
+        font-weight: bold;
+        color: black;
+    
+        > div {
+            cursor: pointer;
+        }
+        .thumbnail {
+            width: 300px;
+            height: 170px;
+            border-radius: 6px;
+        }
     }
+    .paging{
+        padding: 0 31.34px 28.83px;
+        display: flex;
+        justify-content: space-between;
 
-    img {
-        width: 300px;
-        height: 170px;
-        border-radius: 6px;
+        .prevArrow {
+            padding-right: 13.33px;
+        }
+        .nextArrow {
+            padding-left: 13.33px;
+        }
+        img {
+            padding-top: 3.83px;
+            width: 43.33px;
+            height: 30.33px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 
@@ -60,11 +81,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #D9D9D9;
-    font-family: 'Inter';
 
-    &__title {
-        font-size: 28px;
-    }
     &__name {
         padding-top: 11px;
         margin: 0;
