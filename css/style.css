@@ -62,11 +62,12 @@ body {
   padding-left: 13.33px;
 }
 .body .paging img {
-  padding-top: 3.83px;
   width: 43.33px;
   height: 30.33px;
 }
 .body .paging a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
 }
