@@ -3,6 +3,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Inter";
   font-size: 28px;
   margin: 0;
@@ -34,7 +35,10 @@ body {
   background-color: #F37843;
 }
 .body__episode {
-  padding: 55px 0 44px 0;
+  display: flex;
+}
+.body__episode__container {
+  padding: 55px 150px 44px;
   display: grid;
   justify-content: center;
   grid-template-areas: "body__episode1 body__episode2";
@@ -42,10 +46,10 @@ body {
   font-weight: bold;
   color: black;
 }
-.body__episode > div {
+.body__episode__container > div {
   cursor: pointer;
 }
-.body__episode .thumbnail {
+.body__episode__container .thumbnail {
   width: 300px;
   height: 170px;
   border-radius: 6px;
