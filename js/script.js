@@ -1,3 +1,3 @@
-function bukaFolder () {
-    
+function clickInput () {
+    document.getElementById('fileInput').click()
 }

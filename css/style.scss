@@ -28,9 +28,14 @@ body {
         }
     }
 
-    &__logo {
-        padding-right: 30px;
+    img {
+        width: 4.36rem;
+        height: 4.12rem;
+        margin-right: 30px;
         cursor: pointer;
+    }
+    input {
+        display: none;
     }
 }
 

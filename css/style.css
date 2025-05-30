@@ -26,9 +26,14 @@ body {
   color: white;
   text-decoration: none;
 }
-.navbar__logo {
-  padding-right: 30px;
+.navbar img {
+  width: 4.36rem;
+  height: 4.12rem;
+  margin-right: 30px;
   cursor: pointer;
+}
+.navbar input {
+  display: none;
 }
 
 .body {
