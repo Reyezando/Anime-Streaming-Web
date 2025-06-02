@@ -72,13 +72,17 @@ body {
     .paging{
         padding: 0 31.34px 28.83px;
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
 
         .prevArrow {
-            padding-right: 13.33px;
+            img {
+                margin-right: 13.33px;
+            }
         }
         .nextArrow {
-            padding-left: 13.33px;
+            img {
+                margin-left: 13.33px;
+            }
         }
         img {
             width: 43.33px;

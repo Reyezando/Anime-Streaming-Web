@@ -30,8 +30,16 @@ function printVideos () {
     const page = Math.ceil(videoFiles.length/6)
     const video = 0;
 
-    for (let i = 0; i <= page; i++) {
-        body.innerHTML = ''
+    for (let i = 1; i <= page; i++) {
+        body.innerHTML = '<div class="body__episode"><div class="body__episode__container"></div></div>'
+        document.querySelector('.body__episode__container').id = i
+        
+        if (page > 1) {
+            body.innerHTML += '<div class="paging"><a>Next Page<img class="nextArrow" src="assets/next-arrow.png" alt=""></a></div>'
+        } else if () {
+
+        }
+
         for (let j = 0; j <= 5; j++) {
             const videoElement = document.createElement('video')
             const videoURL = URL.createObjectURL(videoFiles[video]);
