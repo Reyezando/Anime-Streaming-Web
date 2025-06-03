@@ -31,14 +31,14 @@ function printVideos () {
     const video = 0;
 
     for (let i = 1; i <= page; i++) {
+        if (i = 2) {
+            body.innerHTML += '<div class="paging"><a class="nextPage">Next Page<img src="assets/next-arrow.png" alt=""></a></div>'
+            var paging = document.querySelector('.paging')
+            paging.justifyContent = 'end'
+        }
+        
         body.innerHTML = '<div class="body__episode"><div class="body__episode__container"></div></div>'
         document.querySelector('.body__episode__container').id = i
-        
-        if (page > 1) {
-            body.innerHTML += '<div class="paging"><a>Next Page<img class="nextArrow" src="assets/next-arrow.png" alt=""></a></div>'
-        } else if () {
-
-        }
 
         for (let j = 0; j <= 5; j++) {
             const videoElement = document.createElement('video')
@@ -50,6 +50,12 @@ function printVideos () {
             if (video >= videoFiles.length) {
                 break; // Exit the loop if there are no more videos
             }
+        }
+        if (2 <= i < page) {
+            paging.innerHTML = '<a class="prevPage" href=""><img src="assets/previous-arrow.png" alt="">Previous Page</a><a class="nextPage">Next Page<img src="assets/next-arrow.png" alt=""></a>'
+            paging.justifyContent = 'space-between'
+        } else if (i = page) {
+            paging.innerHTML = '<a class="prevPage" href=""><img src="assets/previous-arrow.png" alt="">Previous Page</a>'
         }
     }
 }
