@@ -24,8 +24,8 @@ function printVideos () {
     const fileInput = document.getElementById('fileInput')
     const videoFiles = Array.from(fileInput.files).filter(file => file.type.startsWith('video/'))
     if (videoFiles.length === 0) {
-        body.innerHTML = '<p>&nbsp;No videos found.</p>';
-        return; // Exit if no video files are found
+        body.innerHTML = '<p>&nbsp;No videos found.</p>'
+        return // Exit if no video files are found
     }
     const page = Math.ceil(videoFiles.length/6)
     const video = 0;
@@ -38,14 +38,15 @@ function printVideos () {
         }
         
         body.innerHTML = '<div class="body__episode"><div class="body__episode__container"></div></div>'
-        document.querySelector('.body__episode__container').id = i
+        var body__episode__container = document.querySelector('.body__episode__container')
+        body__episode__container.id = i
 
         for (let j = 0; j <= 5; j++) {
             const videoElement = document.createElement('video')
-            const videoURL = URL.createObjectURL(videoFiles[video]);
-            videoElement.src = videoURL;
-            videoElement.controls = true;
-            body.appendChild(videoElement);
+            const videoURL = URL.createObjectURL(videoFiles[video])
+            videoElement.src = videoURL
+            videoElement.controls = true
+            body__episode__container.appendChild(videoElement)
             video++
             if (video >= videoFiles.length) {
                 break; // Exit the loop if there are no more videos
@@ -54,7 +55,8 @@ function printVideos () {
         if (2 <= i < page) {
             paging.innerHTML = '<a class="prevPage" href=""><img src="assets/previous-arrow.png" alt="">Previous Page</a><a class="nextPage">Next Page<img src="assets/next-arrow.png" alt=""></a>'
             paging.justifyContent = 'space-between'
-        } else if (i = page) {
+        }
+        else if (i = page) {
             paging.innerHTML = '<a class="prevPage" href=""><img src="assets/previous-arrow.png" alt="">Previous Page</a>'
         }
     }
