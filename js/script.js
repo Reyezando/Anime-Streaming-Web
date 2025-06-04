@@ -48,15 +48,14 @@ function printVideos () {
             videoElement.controls = true
             body__episode__container.appendChild(videoElement)
             video++
-            if (video >= videoFiles.length) {
+            if (video = videoFiles.length) {
                 break; // Exit the loop if there are no more videos
             }
         }
         if (2 <= i < page) {
             paging.innerHTML = '<a class="prevPage" href=""><img src="assets/previous-arrow.png" alt="">Previous Page</a><a class="nextPage">Next Page<img src="assets/next-arrow.png" alt=""></a>'
             paging.justifyContent = 'space-between'
-        }
-        else if (i = page) {
+        } else if (i = page) {
             paging.innerHTML = '<a class="prevPage" href=""><img src="assets/previous-arrow.png" alt="">Previous Page</a>'
         }
     }
