@@ -48,26 +48,24 @@ body {
         display: flex;
         
         &__container {
-            padding: 55px 150px 44px;
+            padding: 56px 150px 44px;
             display: grid;
-            justify-content: center;
-            grid-template-areas: 'body__episode1 body__episode2';
-                                  gap: 75px 451px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 75px 451px;
         
-            > div {
-                cursor: pointer;
+            a {
+                color: black;
+                text-decoration: none;
             }
-            .thumbnail, video {
+            .thumbnail {
                 width: 300px;
                 height: 170px;
                 border-radius: 6px;
             }
+            p {
+                margin: 0 0 21px;
+            }
         }
-    }
-    video {
-        width: 300px;
-        height: 170px;
-        border-radius: 6px;
     }
     .paging{
         padding: 0 31.34px 28.83px;
@@ -88,7 +86,8 @@ body {
             width: 43.33px;
             height: 30.33px;
         }
-        a {
+        div {
+            cursor: pointer;
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -124,10 +123,7 @@ body {
         a {
             color: black;
         }
-        &__email {
-            margin-top: 7px;
-        }
-        &__wa {
+        div div {
             margin-top: 7px;
         }
     }
